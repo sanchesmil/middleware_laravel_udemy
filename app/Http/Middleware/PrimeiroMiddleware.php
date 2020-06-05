@@ -16,11 +16,11 @@ class PrimeiroMiddleware
      */
     public function handle($request, Closure $next)
     {
-        // Chama a facade de Log do Próprio Laravel
+        // Chama a fachada 'Log' do Próprio Laravel
         Log::debug('Passou pelo Primeiro middleware');
 
         return response('PrimeiroMiddleware parando a cadeia de chamadas');
 
-        // return $next($request);
+        //return $next($request);
     }
 }

@@ -38,10 +38,10 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
 
             // Registra 'SegundoMiddleware' para ser chamado em qualquer requisição 'web'
-          // \App\Http\Middleware\SegundoMiddleware::class,
+            //\App\Http\Middleware\SegundoMiddleware::class,
            
             // Registra 'PrimeiroMiddleware' para ser chamado em qualquer requisição 'web'
-          // \App\Http\Middleware\PrimeiroMiddleware::class,
+           // \App\Http\Middleware\PrimeiroMiddleware::class,
             
            
         ],
@@ -75,6 +75,9 @@ class Kernel extends HttpKernel
         
         //Registro do segundo middleware
         'segundoMiddleware' => \App\Http\Middleware\SegundoMiddleware::class,
+
+        //Registro do terceiro middleware
+        'terceiroMiddleware' => \App\Http\Middleware\TerceiroMiddleware::class,
     ];
 
     /**

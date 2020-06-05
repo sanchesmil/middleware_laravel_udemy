@@ -9,7 +9,7 @@ class UsuariosControlador extends Controller
 {
    public function __construct()
    {
-      // $this->middleware('primeiroMiddleware');  // chama o middleware especificamente para este controlador
+      //$this->middleware('primeiroMiddleware');  // chama o middleware especificamente para este controlador
    }
 
    public function index(){
